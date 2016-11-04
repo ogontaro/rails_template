@@ -1,24 +1,14 @@
-# README
+# rails_template
+Railsのテンプレートです。
+これをベースにすることで、面倒な初期設定を省き、実務で使うRails構成で開発を行うことができます。
+また、wikiには、具体的な構築手順を記載しています。
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* システム構成
+DB: MySQL
+テスト: RSpec
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* rails new
+以下のコマンドでrailsを構成する
+```shell
+rails new --database=mysql --skip-turbolinks --skip-test
+```
