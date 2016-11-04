@@ -12,3 +12,7 @@ DB: MySQL
 ```shell
 rails new --database=mysql --skip-turbolinks --skip-test
 ```
+
+* rubyのバージョンの指定
+プロジェクトルートに".ruby-version"ファイルを置くことで、
+rbenvやbundlerに実行するrubyのバージョンを指定させる。
