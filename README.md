@@ -13,6 +13,11 @@ DB: MySQL
 rails new --database=mysql --skip-turbolinks --skip-test
 ```
 
+* rubyのバージョンの指定
+プロジェクトルートに".ruby-version"ファイルを置くことで、
+rbenvやbundlerに実行するrubyのバージョンを指定させる。
+
+
 * テンプレートエンジンをslimに
 gemfileに以下を追加
 ```
@@ -27,7 +32,3 @@ gem 'html2slim'
 ```shell
 # for i in app/views/**/*.erb; do erb2slim $i ${i%erb}slim && rm $i; done
 ```
-
-* rubyのバージョンの指定
-プロジェクトルートに".ruby-version"ファイルを置くことで、
-rbenvやbundlerに実行するrubyのバージョンを指定させる。
