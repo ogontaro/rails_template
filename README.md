@@ -13,6 +13,21 @@ DB: MySQL
 rails new --database=mysql --skip-turbolinks --skip-test
 ```
 
+* テンプレートエンジンをslimに
+gemfileに以下を追加
+```
+gem 'slim-rails'
+```
+
+既存のerbファイルをslimにしたいときは以下のgemを一時的に追加
+```
+gem 'html2slim'
+```
+その後以下のコマンドをプロジェクトルートディレクトリで実行するとslimファイルにerbファイルが変換される
+```shell
+# for i in app/views/**/*.erb; do erb2slim $i ${i%erb}slim && rm $i; done
+```
+
 * rubyのバージョンの指定
 プロジェクトルートに".ruby-version"ファイルを置くことで、
 rbenvやbundlerに実行するrubyのバージョンを指定させる。
