@@ -15,8 +15,13 @@ $ rails new --database=mysql --skip-turbolinks --skip-test
 ```
 
 ### rubyのバージョンの指定
-プロジェクトルートに".ruby-version"ファイルを置くことで、
-rbenvやbundlerに実行するrubyのバージョンを指定させる。
+以下のコマンドでそのディレクトリ以下で実行されるrubyのバージョンを指定できる。
+コマンドの結果は```.ruby-version```に出力されるので、後から変更する場合はこのファイルを変更する。
+
+```shell
+rbenv local 2.3.1
+```
+
 
 ### テンプレートエンジンをslimに
 gemfileに以下を追加
